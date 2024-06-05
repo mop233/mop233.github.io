@@ -32,7 +32,7 @@ git subtree push --prefix docs/.vitepress/dist origin gh-pages
 如果嫌命令太长，也可以为它配置一个别名：
 
 ```sh
-git config --global alias.vitepress subtree push --prefix docs/.vitepress/dist origin gh-pages
+git config --global alias.vitepress "subtree push --prefix docs/.vitepress/dist origin gh-pages"
 ```
 
 这样，当你使用 `git vitepress` 命令时，就能将 `docs/.vitepress/dist` 目录推送到 gh-pages 分支了。
