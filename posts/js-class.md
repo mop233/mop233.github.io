@@ -308,7 +308,7 @@ class IncreasingCounter {
 
 上面代码中，实例属性 `_count` 与取值函数 `valueOf()` 和 `increment()` 方法，处于同一个层级。这时，不需要在实例属性前面加上 `this`。
 
-::: warnign 注意
+::: warning 注意
 新写法定义的属性是实例对象自身的属性，而不是定义在实例对象的原型上面。
 :::
 
@@ -338,7 +338,7 @@ class MyClass {
     return 'getter';
   }
   set prop(value) {
-    console.log('setter: '+value);
+    console.log('setter: ' + value);
   }
 }
 
@@ -590,7 +590,7 @@ function bar(baz) {
 }
 ```
 
-上面代码中，`foo` 是公开方法，内部调用了 `bar.call(this, baz)`。这使得 `bar()` 实际上称为了当前类的私有方法。
+上面代码中，`foo` 是公开方法，内部调用了 `bar.call(this, baz)`。这使得 `bar()` 实际上成为了当前类的私有方法。
 
 还有一种方法是利用 `Symbol` 值的唯一性，将私有方法的名字命名为一个 `Symbol` 值。
 
@@ -741,7 +741,7 @@ class Foo {
 Foo.getPrivateValue(new Foo()); // 42
 ```
 
-私有属性和私有方法前面，也可以加上 `static` 关键字，表示这是一个金泰的私有属性或私有方法。
+私有属性和私有方法前面，也可以加上 `static` 关键字，表示这是一个静态的私有属性或私有方法。
 
 ```js
 class FakeMath {
