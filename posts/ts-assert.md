@@ -2,7 +2,7 @@
 title: 'TypeScript 的类型断言'
 date: '2024-6-17'
 category: '前端'
-tags: ['typeScript']
+tags: ['typescript']
 detail: 'TS 提供了类型断言，允许开发者在代码中“断言”某个值的类型，告诉编译器此处的值是什么类型。'
 ---
 
