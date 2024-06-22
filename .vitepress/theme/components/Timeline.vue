@@ -15,7 +15,9 @@ const groups = computed(() => formatPosts(props.posts))
 <template>
   <div class="timeline" v-for="group in groups">
     <div class="timeline-dot">
-      <span class="timeline-dot-title">{{ group.year }}</span>
+      <span class="timeline-dot-title">
+        {{ group.year }}（{{ group.posts.length }}）
+      </span>
       <ul>
         <li v-for="post in group.posts">
           <span>
